@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp"
+        android:foreground="?attr/selectableItemBackground"
+        card_view:cardBackgroundColor="#FFFFFFFF"
+        card_view:cardCornerRadius="2dp"
+        card_view:cardElevation="10dp">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+
+            android:weightSum="3">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+
+                >
+
+
+                <TextView
+                    android:id="@+id/txtContactName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorPrimaryDark"
+
+
+                    android:layout_gravity="left"
+                    android:paddingLeft="8dp"
+
+                    android:layout_marginTop="8dp"
+                    android:text="Contact Name"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                <TextView
+                    android:id="@+id/txtDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="8dp"
+                    android:layout_gravity="left"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginTop="8dp"
+                    android:text="12-12-2016"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:id="@+id/txtIncoming"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="8dp"
+
+
+                    android:fontFamily="sans-serif-medium"                    android:layout_gravity="left"
+                    android:layout_marginBottom="8dp"
+                    android:text="Incoming Calls"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+
+
+                <TextView
+                    android:id="@+id/txtOutgoing"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-medium"
+                    android:paddingLeft="8dp"
+                    android:layout_gravity="left"
+                    android:layout_marginBottom="8dp"
+                    android:text="Outgoing Calls"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+
+
+                <TextView
+                    android:id="@+id/txtMissed"
+                    android:layout_width="wrap_content"
+                    android:fontFamily="sans-serif-medium"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="8dp"
+                    android:layout_gravity="left"
+                    android:layout_marginBottom="8dp"
+                    android:text="Missed Calls"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+
+
+
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:visibility="gone"
+
+                android:layout_height="fill_parent"
+                android:layout_weight="2"
+                android:gravity="center"
+
+                >
+
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_weight="2"
+
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/btndelete"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+
+                        android:background="@drawable/icon_delete" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_weight="2"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/btnedit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:background="@drawable/icon_edit" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+
+</LinearLayout>

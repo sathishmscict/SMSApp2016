@@ -1,0 +1,59 @@
+{
+  "project_info": {
+    "project_number": "823764775882",
+    "firebase_url": "https://sms-app-2016.firebaseio.com",
+    "project_id": "sms-app-2016",
+    "storage_bucket": "sms-app-2016.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:823764775882:android:1b92dfc0c2e9cd54",
+        "android_client_info": {
+          "package_name": "com.tech9teen"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "823764775882-56b07992qdov0m5jcsmmbd4mc3gevq78.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.tech9teen",
+            "certificate_hash": "2821AA26DB21889DC8DD3D958177B83127E0B064"
+          }
+        },
+        {
+          "client_id": "823764775882-t31qv8tvoe2gjt5gcu7e59sle4da44n6.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "823764775882-p8e09b91mvijgqohrju347t6p2t0po8v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDzufCIJp1Hu2W6l5YHKjnJ78GOq-yVIac"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "823764775882-t31qv8tvoe2gjt5gcu7e59sle4da44n6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

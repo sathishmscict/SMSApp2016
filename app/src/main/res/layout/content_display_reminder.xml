@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+
+     app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.tech9teen.DisplayReminder"
+    tools:showIn="@layout/activity_display_reminder">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Descr"
+        android:id="@+id/txtDescr"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+         />
+
+    <com.andexert.library.RippleView
+        android:id="@+id/more"
+        android:layout_marginTop="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+
+        >
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+
+        android:text="         Cancel / Dismiss       "
+        android:textColor="@color/white"
+        android:background="@drawable/button_rect_list_normal_blue"
+
+        android:id="@+id/btnCancel"
+        />
+    </com.andexert.library.RippleView>
+</LinearLayout>

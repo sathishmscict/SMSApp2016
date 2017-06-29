@@ -1,0 +1,27 @@
+<!--
+  ~ Copyright 2016 Alireza Eskandarpour Shoferi
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~     http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+
+<resources>
+    <string name="exception.no_such_method.set_view_pager">The indicator must have \'setViewPager\' method to set the ViewPager.</string>
+    <string name="exception.invocation_target.set_view_pager">Exception in invoking \'setViewPager\' method from the indicator.</string>
+    <string name="exception.illegal_access.set_view_pager">Exception in invoking \'setViewPager\' method from the indicator.</string>
+    <string name="exception.permission.vibrate">android.permission.VIBRATE permission needed.</string>
+    <string name="exception_left_indicator_id">There\'s no \'leftIndicator\' ID</string>
+    <string name="exception_right_indicator_id">There\'s no \'rightIndicator\' ID</string>
+    <string name="exception_page_indicator_id">There\'s no \'pageIndicator\' ID</string>
+    <string name="exception_previous_indicator_instanceof">Left indicator must be instance of \'LeftToggleIndicator\'</string>
+    <string name="exception_next_indicator_instanceof">Right indicator must be instance of \'RightToggleIndicator\'</string>
+</resources>

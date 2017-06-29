@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_sendsms"
+            android:icon="@drawable/icon_sendsms"
+            android:title="Send SMS" />
+        <item
+            android:id="@+id/nav_referandearn"
+            android:icon="@drawable/icon_share"
+            android:title="Free SMS" />
+
+
+        <item
+            android:id="@+id/nav_reminders"
+            android:icon="@drawable/icon_reminders"
+            android:visible="false"
+            android:title="Refer &amp; earn" />
+
+
+
+        <item
+            android:id="@+id/nav_group"
+            android:icon="@drawable/icon_group_master"
+            android:title="Manage Group" />
+        <item
+            android:id="@+id/nav_template"
+            android:icon="@drawable/icon_message_template"
+            android:title="Manage Templates" />
+        <item
+            android:id="@+id/nav_smsmanager"
+            android:icon="@drawable/icon_message_group"
+            android:visible="false"
+            android:title="SMS Manager" />
+        <item
+            android:id="@+id/nav_reports"
+            android:icon="@drawable/icon_progress_report"
+            android:visible="false"
+            android:title="Reports" />
+
+        <item
+            android:id="@+id/nav_rates"
+            android:icon="@drawable/icon_rupees_or_rates"
+            android:title="Rates" />
+
+
+
+        <item
+            android:id="@+id/nav_aboutus"
+            android:icon="@drawable/icon_aboutus"
+            android:title="About"
+            android:visible="false"/>
+
+
+        <item
+            android:id="@+id/nav_settings"
+            android:icon="@drawable/icon_settings"
+            android:title="Settings" />
+
+    </group>
+
+
+</menu>

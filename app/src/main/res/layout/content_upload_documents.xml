@@ -1,0 +1,535 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_upload_documents"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.tech9teen.UploadDocumentsActivity"
+    tools:showIn="@layout/activity_upload_documents">
+
+
+    <LinearLayout
+        android:id="@+id/llshowdata"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+        >
+
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_view_documents"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:alwaysDrawnWithCache="false"
+            android:persistentDrawingCache="none"
+
+            android:visibility="visible" />
+
+
+        <TextView
+            android:id="@+id/txtnodata"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|center_horizontal"
+            android:layout_marginTop="20dp"
+            android:text="NO DATA FOUND"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/lladddata"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:foreground="?attr/selectableItemBackground"
+                    card_view:cardBackgroundColor="#FFFFFFFF"
+                    card_view:cardCornerRadius="2dp"
+
+
+                    card_view:cardElevation="10dp">
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="10dp"
+
+
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/txtError"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/red_error"
+
+                            android:visibility="visible" />
+
+                        <Spinner
+                            android:id="@+id/spnGateway"
+                            android:layout_width="fill_parent"
+
+                            android:layout_height="wrap_content"
+                            android:drawSelectorOnTop="true"
+
+
+                            android:dropDownWidth="fill_parent"
+
+
+                            />
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:foreground="?attr/selectableItemBackground"
+                    card_view:cardBackgroundColor="#FFFFFFFF"
+                    card_view:cardCornerRadius="2dp"
+
+
+                    card_view:cardElevation="10dp">
+
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/input_layout_edtsenderid"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+
+
+                        android:gravity="center|left">
+
+                        <EditText
+                            android:id="@+id/edtsenderid"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center|top|left"
+                            android:hint="Sender Id"
+                            android:inputType="textCapCharacters"
+
+
+                            android:maxLength="6"
+
+                            />
+                    </android.support.design.widget.TextInputLayout>
+                </android.support.v7.widget.CardView>
+
+
+                <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/crdPhoto"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:foreground="?attr/selectableItemBackground"
+                    card_view:cardBackgroundColor="#FFFFFFFF"
+                    card_view:cardCornerRadius="2dp"
+                    card_view:cardElevation="10dp">
+
+                    <LinearLayout
+
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:orientation="vertical">
+
+
+                        <RelativeLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp">
+
+                            <ImageView
+                                android:id="@+id/imgPhoto"
+
+
+                                android:layout_width="fill_parent"
+
+                                android:layout_height="300dp"
+
+
+                                />
+
+                            <ImageView
+
+                                android:id="@+id/imgPhotoCheck"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+
+
+                                android:layout_alignParentEnd="true"
+                                android:layout_alignParentRight="true"
+                                android:layout_alignParentTop="true"
+                                android:layout_margin="8dp"
+                                android:layout_marginEnd="7dp"
+                                android:layout_marginRight="7dp" />
+
+                            <!--android:src="@drawable/icon_refresh"-->
+
+
+                        </RelativeLayout>
+
+
+                        <android.support.design.widget.TextInputLayout
+
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.13"
+                            android:gravity="center|left">
+
+
+                            <TextView
+
+                                android:id="@+id/txtUploadPhoto"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="15dp"
+
+                                android:layout_marginTop="15dp"
+                                android:drawableLeft="@drawable/icon_add_group"
+
+                                android:fontFamily="sans-serif"
+                                android:text="  Tap to upload Passport size photo"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:textColor="@color/black"
+                                android:typeface="sans" />
+
+                        </android.support.design.widget.TextInputLayout>
+
+
+                    </LinearLayout>
+
+
+                </android.support.v7.widget.CardView>
+
+
+                <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/crdDocument"
+
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+
+
+                    android:foreground="?attr/selectableItemBackground"
+                    card_view:cardBackgroundColor="#FFFFFFFF"
+                    card_view:cardCornerRadius="2dp"
+
+
+                    card_view:cardElevation="10dp">
+
+                    <LinearLayout
+
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:orientation="vertical">
+
+
+                        <RelativeLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp">
+
+
+                            <ImageView
+                                android:id="@+id/imgDocument"
+
+                                android:layout_width="fill_parent"
+                                android:layout_height="300dp"
+
+                                />
+
+                            <ImageView
+
+                                android:id="@+id/imgDocumentCheck"
+                                android:layout_width="40dp"
+
+
+                                android:layout_height="40dp"
+                                android:layout_alignParentEnd="true"
+                                android:layout_alignParentRight="true"
+                                android:layout_alignParentTop="true"
+                                android:layout_margin="8dp"
+                                android:layout_marginEnd="7dp"
+                                android:layout_marginRight="7dp" />
+                            <!--android:src="@drawable/icon_refresh"-->
+                        </RelativeLayout>
+
+
+                        <android.support.design.widget.TextInputLayout
+
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.13"
+                            android:gravity="center|left">
+
+
+                            <TextView
+
+                                android:id="@+id/txtFilledDocument"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="15dp"
+
+                                android:layout_marginTop="15dp"
+                                android:drawableLeft="@drawable/icon_add_group"
+                                android:fontFamily="sans-serif"
+                                android:text=" Tap to upload your filled Document"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:textColor="@color/black"
+                                android:typeface="sans" />
+
+
+                        </android.support.design.widget.TextInputLayout>
+
+
+                    </LinearLayout>
+
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/crdIdProof"
+
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+
+
+                    android:foreground="?attr/selectableItemBackground"
+                    card_view:cardBackgroundColor="#FFFFFFFF"
+                    card_view:cardCornerRadius="2dp"
+
+
+                    card_view:cardElevation="10dp">
+
+
+                    <LinearLayout
+
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:orientation="vertical">
+
+
+                        <RelativeLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp">
+
+
+                            <ImageView
+                                android:id="@+id/imgIdProof"
+
+                                android:layout_width="fill_parent"
+                                android:layout_height="300dp"
+
+                                />
+
+                            <ImageView
+
+                                android:id="@+id/imgIdProofCheck"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+
+
+                                android:layout_alignParentEnd="true"
+                                android:layout_alignParentRight="true"
+                                android:layout_alignParentTop="true"
+                                android:layout_margin="8dp"
+                                android:layout_marginEnd="7dp"
+                                android:layout_marginRight="7dp" />
+                            <!--android:src="@drawable/icon_refresh"-->
+                        </RelativeLayout>
+
+
+                        <android.support.design.widget.TextInputLayout
+
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.13"
+                            android:gravity="center|left">
+
+
+                            <TextView
+
+                                android:id="@+id/txtIdProof"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="15dp"
+
+                                android:layout_marginTop="15dp"
+                                android:drawableLeft="@drawable/icon_add_group"
+                                android:fontFamily="sans-serif"
+                                android:text="  Tap to upload IdProof"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:textColor="@color/black"
+                                android:typeface="sans" />
+
+
+                        </android.support.design.widget.TextInputLayout>
+
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+
+                <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/crdIdProof2"
+
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+
+
+                    android:foreground="?attr/selectableItemBackground"
+                    card_view:cardBackgroundColor="#FFFFFFFF"
+                    card_view:cardCornerRadius="2dp"
+
+
+                    card_view:cardElevation="10dp">
+
+                    <LinearLayout
+
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:orientation="vertical">
+
+
+                        <RelativeLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp">
+
+
+                            <ImageView
+                                android:id="@+id/imgIdProof2"
+
+                                android:layout_width="fill_parent"
+                                android:layout_height="300dp"
+
+                                />
+
+                            <ImageView
+
+                                android:id="@+id/imgIdProof2Check"
+                                android:layout_width="40dp"
+
+
+                                android:layout_height="40dp"
+                                android:layout_alignParentEnd="true"
+                                android:layout_alignParentRight="true"
+                                android:layout_alignParentTop="true"
+                                android:layout_margin="8dp"
+                                android:layout_marginEnd="7dp"
+                                android:layout_marginRight="7dp" />
+                            <!--android:src="@drawable/icon_refresh"-->
+                        </RelativeLayout>
+
+
+                        <android.support.design.widget.TextInputLayout
+
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.13"
+                            android:gravity="center|left">
+
+
+                            <TextView
+
+                                android:id="@+id/txtIdProof2"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="15dp"
+                                android:layout_marginLeft="4dp"
+                                android:layout_marginTop="15dp"
+                                android:drawableLeft="@drawable/icon_add_group"
+                                android:fontFamily="sans-serif"
+                                android:text="  Tap to upload IdProof"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:textColor="@color/black"
+                                android:typeface="sans" />
+
+
+                        </android.support.design.widget.TextInputLayout>
+
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+
+                <com.andexert.library.RippleView
+                    android:id="@+id/more"
+                    rv_centered="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="20dp"
+
+                    >
+
+                    <Button
+                        android:id="@+id/btnUpload"
+                        android:layout_width="fill_parent"
+
+
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/button_rect_list_normal_blue"
+                        android:text="Upload Documents"
+                        android:textColor="@color/white"
+
+                        />
+                </com.andexert.library.RippleView>
+
+
+            </LinearLayout>
+        </ScrollView>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

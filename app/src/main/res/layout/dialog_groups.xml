@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="fill_parent"
+        android:gravity="center"
+        android:visibility="gone"
+        android:textColor="@color/red_error"
+
+        android:layout_height="wrap_content"
+        android:id="@+id/txtError" />
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view_group"
+        android:layout_width="fill_parent"
+        android:layout_weight="1"
+        android:layout_height="0dip" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:background="@drawable/button_rect_list_normal_blue"
+            android:layout_weight="1"
+            android:text="CANCEL"
+            />
+
+        <Button
+            android:id="@+id/btnOk"
+            android:layout_width="fill_parent"
+            android:layout_weight="1"
+            android:layout_marginLeft="4dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:background="@drawable/button_rect_list_normal_blue"
+            android:text="OK"
+            />
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

@@ -1,0 +1,401 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.tech9teen.LoginActivity"
+    android:gravity="center"
+    android:layout_gravity="center">
+    <!--tools:showIn="@layout/activity_login"-->
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+
+        android:weightSum="2">
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.3"
+            android:background="#FFFFFF"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+
+                android:src="@drawable/symbol"
+                android:id="@+id/imageView3" />
+
+
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.7"
+            android:orientation="vertical">
+
+
+            <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+
+
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:foreground="?attr/selectableItemBackground"
+                card_view:cardBackgroundColor="#FFFFFFFF"
+                card_view:cardCornerRadius="2dp"
+
+
+                card_view:cardElevation="5dp">
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/input_layout_edtEmail"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.13"
+                    android:gravity="center|left">
+
+                    <EditText
+                        android:id="@+id/edtEmail"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center|top|left"
+                        android:hint="Enter Mobile No. "
+                        android:maxLength="10"
+
+                        android:inputType="number"
+
+                        android:minLines="1"
+
+                        />
+                </android.support.design.widget.TextInputLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+
+
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:foreground="?attr/selectableItemBackground"
+                card_view:cardBackgroundColor="#FFFFFFFF"
+                card_view:cardCornerRadius="2dp"
+
+
+                card_view:cardElevation="5dp">
+
+                <LinearLayout
+
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.3">
+
+                        <LinearLayout
+
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+
+
+                            android:orientation="vertical">
+
+                            <android.support.design.widget.TextInputLayout
+                                android:id="@+id/input_layout_edtPassword"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.13"
+                                android:gravity="center|left">
+
+                                <EditText
+                                    android:id="@+id/edtPassword"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="center|top|left"
+                                    android:hint="Enter Password"
+
+
+                                    android:inputType="textPassword"
+
+                                    android:minLines="1"
+
+                                    />
+                            </android.support.design.widget.TextInputLayout>
+
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:visibility="gone"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1.7">
+
+                        <ImageView
+                            android:id="@+id/imgShowPassword"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_margin="8dp"
+                            android:src="@drawable/icon_show" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txvforgotpass"
+                    android:gravity="right"
+                    android:layout_gravity="center"
+                    android:text="   Forgot Password?  "
+
+                    />
+
+
+
+            <Button
+                android:id="@+id/btnSubmit"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/button_rect_list_normal_blue"
+                android:text="Sign in"
+                android:textColor="@color/white"
+
+                android:textStyle="bold" />
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.2"
+                    android:gravity="center"
+                    android:visibility="gone"
+                    android:orientation="vertical">
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/textSecondary" />
+
+                </LinearLayout>
+
+
+
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:visibility="gone"
+                    android:layout_weight="1.2"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/textSecondary" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <!--Social Login  Icons-->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+
+                android:gravity="center"
+
+
+                android:orientation="horizontal">
+
+
+                <!--<com.andexert.library.RippleView
+                    android:id="@+id/mor"
+                    rv_centered="true"
+                    android:layout_width="fill_parent"
+                    android:layout_height="60dp"
+                    android:layout_margin="5dp"
+                    android:layout_toLeftOf="@+id/more2"
+                    android:layout_weight="1">
+
+                    <Button
+                        android:id="@+id/app"
+                        android:layout_width="fill_parent"
+                        android:layout_height="200dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:visibility="gone"
+                        android:background="#E89800"
+                        android:drawableLeft="@mipmap/ic_launcher"
+                        android:elevation="20dp"
+                        android:onClick="onClick"
+
+                        android:paddingLeft="8dp"
+                        android:textAllCaps="false"
+                        android:textColor="#ffffff"
+                        android:textStyle="bold" />
+                </com.andexert.library.RippleView>-->
+
+
+                <com.facebook.login.widget.LoginButton
+                    android:id="@+id/login_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone" />
+
+
+                <com.andexert.library.RippleView
+                    android:id="@+id/more"
+                    rv_centered="true"
+                    android:layout_width="fill_parent"
+                    android:layout_height="60dp"
+                    android:layout_margin="5dp"
+                    android:layout_toLeftOf="@+id/more2"
+                    android:layout_weight="1">
+
+                    <Button
+                        android:id="@+id/fb"
+                        android:layout_width="fill_parent"
+                        android:layout_height="200dp"
+                        android:background="#0D47A1"
+                        android:visibility="gone"
+                        android:drawableLeft="@drawable/icon_facebook_logo"
+                        android:elevation="20dp"
+                        android:onClick="onClick"
+                        android:paddingLeft="70dp"
+                        android:textAllCaps="false"
+                        android:textColor="#ffffff"
+                        android:textStyle="bold"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true" />
+                </com.andexert.library.RippleView>
+
+                <com.andexert.library.RippleView
+
+                    rv_centered="true"
+                    android:layout_width="fill_parent"
+                    android:layout_height="60dp"
+                    android:layout_margin="5dp"
+                    android:layout_toLeftOf="@+id/more2"
+                    android:layout_weight="1">
+
+                    <Button
+                        android:id="@+id/gmail"
+                        android:layout_width="fill_parent"
+                        android:layout_height="200dp"
+                        android:background="#CF4C3C"
+                        android:paddingRight="70dp"
+                        android:drawableRight="@drawable/icon_gmail_logo"
+                        android:elevation="20dp"
+                        android:onClick="onClick"
+                        android:paddingLeft="8dp"
+                        android:textAllCaps="false"
+                        android:textColor="#CF4C3C"
+                        android:visibility="gone"
+                        android:textStyle="bold"
+
+                        />
+                </com.andexert.library.RippleView>
+
+                <Button
+                    android:id="@+id/buttonLeft"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/button"
+                    android:text="@string/button_login"
+                    android:textColor="@color/button_text"
+                    android:visibility="gone" />
+
+                <Button
+                    android:id="@+id/buttonRight"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="24dp"
+                    android:background="@drawable/button"
+                    android:text="@string/button_signup"
+                    android:textColor="@color/button_text"
+                    android:visibility="gone" />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txtForgot"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                android:gravity="right"
+                android:text="Forgot Password"
+
+                android:visibility="invisible"
+
+                android:textColor="@color/dot_dark_screen3"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

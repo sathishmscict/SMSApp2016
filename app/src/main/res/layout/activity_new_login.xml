@@ -1,0 +1,124 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NewLoginActivity">
+
+    <com.tech9teen.helper.CustomVideoView
+        android:id="@+id/videoView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+<!--
+    <com.tech9teen.FormView
+        android:id="@+id/formView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="36dp"
+        android:layout_marginRight="36dp"
+        android:layout_marginTop="124dp"
+        android:alpha="0"/>-->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="40dp"
+        android:gravity="center_horizontal"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:orientation="vertical">
+
+
+
+        <com.facebook.login.widget.LoginButton
+            android:id="@+id/login_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+
+        <com.andexert.library.RippleView
+            android:id="@+id/more"
+            android:layout_width="fill_parent"
+            android:layout_height="?android:actionBarSize"
+            android:layout_toLeftOf="@+id/more2"
+            android:layout_margin="5dp"
+            rv_centered="true">
+
+            <Button
+                android:id="@+id/fb"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#0D47A1"
+                android:elevation="20dp"
+                android:paddingLeft="8dp"
+
+                android:onClick="onClick"
+                android:textColor="#ffffff"
+                android:drawableLeft="@drawable/icon_facebook"
+                android:textStyle="bold"
+                android:text="Signin With Facebook"
+                android:textAllCaps="false"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+        </com.andexert.library.RippleView>
+
+        <com.andexert.library.RippleView
+
+            android:layout_width="fill_parent"
+            android:layout_height="?android:actionBarSize"
+            android:layout_toLeftOf="@+id/more2"
+            android:layout_margin="5dp"
+            rv_centered="true">
+
+        <Button
+            android:id="@+id/gmail"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:layout_marginTop="8dp"
+            android:onClick="onClick"
+            android:drawableLeft="@drawable/icon_google_plus"
+            android:paddingLeft="8dp"
+            android:textColor="#CF4C3C"
+            android:elevation="20dp"
+            android:textStyle="bold"
+            android:text="Signin With Google+"
+            android:textAllCaps="false"
+
+            />
+        </com.andexert.library.RippleView>
+
+        <Button
+            android:id="@+id/buttonLeft"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:visibility="gone"
+            android:background="@drawable/button"
+            android:text="@string/button_login"
+            android:textColor="@color/button_text" />
+
+        <Button
+            android:id="@+id/buttonRight"
+            android:layout_width="150dp"
+            android:visibility="gone"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:background="@drawable/button"
+            android:text="@string/button_signup"
+            android:textColor="@color/button_text" />
+
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/appName"
+        android:layout_width="fill_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:text="Welcome to \n SMS APP"
+        android:textSize="44dp"
+        android:layout_centerInParent="true"
+        android:textColor="@android:color/white"/>
+</RelativeLayout>

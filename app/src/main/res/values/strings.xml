@@ -1,0 +1,95 @@
+<resources xmlns:xliff="http://schemas.android.com/tools">
+    <string name="app_name">SMSApp</string>
+    <string name="action_settings">Settings</string>
+
+
+    <string name="facebook_app_id">311686052517302</string>
+    <string name="title_activity_gmail_login_demo">GmailLoginDemo</string>
+
+
+    <!--<string name="google_appid">AIzaSyCA4CpF9n1eU_lwFD7H1bnXT9c3561mwCE</string>-->
+
+    <string name="button_login">Login</string>
+    <string name="button_signup">Sign Up</string>
+    <string name="button_confirm_login">Confirm Login</string>
+    <string name="button_cancel_login">Cancel Login</string>
+    <string name="button_confirm_signup">Confirm Sign Up</string>
+    <string name="button_cancel_signup">Cancel Sign Up</string>
+    <string name="edit_username">username</string>
+    <string name="edit_password">password</string>
+
+    <string name="no_network">Not able to connect to SMS App</string>
+    <string name="no_network2">Please Enable Wifi or Mobile data</string>
+    <string name="no_network3">Sorry,no Internet conenctivity detected. Please reconnect and try again.</string>
+
+    <string name="terms_line1">By continuing,you are indicating that you agree to the</string>
+    <string name="terms_line2">Privacy Policy and Terms</string>
+
+    <string name="verification_line1">Sit back &amp; Relax! while we verify your</string>
+    <string name="verification_line2">mobile number</string>
+    <string name="verification_line3">( Enter the OTP below in case if we fail detect the</string>
+    <string name="verification_line4">SMS automatically )</string>
+
+    <string name="title_activity_new_verification">NewVerificationActivity</string>
+    <string name="title_activity_dash_board">DashBoard</string>
+    <string name="title_activity_menu">MenuActivity</string>
+    <string name="title_activity_trending_videos_acivity">TrendingVideosAcivity</string>
+
+
+    <string name="youtube_currently_installed">YouTube version installed on this device: <xliff:g id="youtube_version">%1$s</xliff:g>.</string>
+    <string name="youtube_not_installed">YouTube is not installed on this device.</string>
+    <string name="title_activity_followus">Follow Us</string>
+    <string name="title_activity_message_template">MessageTemplateActivity</string>
+    <string name="title_activity_reminders_acivity">Reminders</string>
+    <string name="title_activity_group_master">GroupMasterActivity</string>
+    <string name="title_activity_call_history">CallHistoryActivity</string>
+    <string name="title_activity_display_reminder">DisplayReminder</string>
+    <string name="title_activity_send_sms">SendSMS</string>
+    <string name="tap_to_select">Tap to Select Group</string>
+    <string name="title_activity_smshistory">SMSHistory</string>
+    <string name="title_activity_demo_constraint_atcivity">DemoConstraintAtcivity</string>
+    <string name="title_activity_message_log_data">MessageLogDataActivity</string>
+    <string name="title_activity_add_sender_id_for_message_log">Add SenderId</string>
+    <string name="title_activity_visiting_card_reader">VisitingCardReader</string>
+
+
+    <string name="title_activity_image_gallery_albums">Image Albums</string>
+    <string name="title_activity_gallery_images">GalleryImagesActivity</string>
+    <string name="title_activity_video">Videos</string>
+    <string name="title_activity_play_video">Video</string>
+    <string name="error_player">There was an error initializing the YouTubePlayer (%1$s)</string>
+    <string name="btn_skip_intro">Skip Intro</string>
+
+
+    <string name="title_activity_welcome">Home Screen</string>
+    <string name="next">NEXT</string>
+    <string name="skip">SKIP</string>
+    <string name="start">GOT IT</string>
+
+    <string name="slide_1_title">@string/app_name</string>
+    <string name="slide_1_desc">Welcome to coach for life</string>
+
+    <string name="slide_2_title">@string/app_name</string>
+    <string name="slide_2_desc"> SMS App is a convenient way to send single and mass text messages via an SMS gateway</string>
+
+    <string name="slide_3_title">@string/app_name</string>
+    <string name="slide_3_desc">Send text messages from tablets without SIM card support</string>
+
+    <string name="slide_4_title">World Travel</string>
+    <string name="slide_4_desc">Send text messages globally at lower prices compared to your mobile carrier</string>
+
+    <string name="play_again_desc">To see the welcome slider again, goto Settings -> apps -> welcome slider -> clear data</string>
+    <string name="play_again">Play Again</string>
+    <string name="signuptostart">Sign up to start sending SMS.</string>
+    <string name="welcome">Welcome!</string>
+    <string name="title_activity_login">Login</string>
+    <string name="title_activity_register">RegisterActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="title_activity_new_send_sms">Send SMS</string>
+    <string name="title_activity_settings">Settings</string>
+    <string name="title_activity_upload_documents">Upload Documents</string>
+
+
+</resources>

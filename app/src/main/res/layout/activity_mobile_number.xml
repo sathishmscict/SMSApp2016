@@ -1,0 +1,178 @@
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/coordinateLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@color/colorPrimaryDark"
+    android:fitsSystemWindows="true">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="fill_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            android:gravity="center">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center|left">
+
+                <TextView
+                    android:id="@+id/toolbar_title"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center"
+
+                    android:gravity="center"
+                    android:paddingRight="50dp"
+                    android:text="Confirm Number"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/activity_vertical_margin">
+
+            <TextView
+                android:id="@+id/txvinfo"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center"
+                android:text="Enter Your Phone number below to get started :"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+
+
+            android:background="@drawable/shape_number"
+            android:orientation="horizontal"
+
+            android:weightSum="5">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_margin="4dp"
+                android:layout_weight="4"
+                android:background="@color/colorPrimary"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/txvno"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="#A7B4BD"
+                    android:clickable="false"
+
+                    android:editable="false"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:text=" +91 "
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+
+                android:orientation="vertical">
+
+
+                <EditText
+                    android:id="@+id/edtnumber"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:hint="Mobile Number"
+
+
+                    android:imeOptions="actionNext"
+                    android:inputType="number"
+                    android:maxLength="10"
+
+
+                    android:orientation="vertical"
+                    android:singleLine="true"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="vertical"
+            android:paddingLeft="35sp"
+            android:paddingRight="35sp"
+            android:paddingTop="30sp">
+
+            <com.andexert.library.RippleView
+
+                rv_centered="true"
+                android:layout_width="fill_parent"
+                android:layout_height="?android:actionBarSize"
+                android:layout_margin="5dp"
+                android:layout_toLeftOf="@+id/more2">
+
+                <Button
+                    android:id="@+id/btnnext"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+
+                    android:background="@drawable/button_rect_list_normal_white"
+                    android:elevation="130dp"
+                    android:text="Next"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textStyle="bold" />
+            </com.andexert.library.RippleView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</android.support.design.widget.CoordinatorLayout>

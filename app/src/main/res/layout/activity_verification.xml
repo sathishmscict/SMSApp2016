@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/coordinateLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="fill_parent"
+            android:gravity="center"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            >
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:gravity="center|left"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:text="Verification Process"
+
+                    android:textStyle="bold"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="#FFFFFF"
+                    android:layout_gravity="center"
+                    android:id="@+id/toolbar_title" />
+            </LinearLayout>
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+
+        >
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+
+            android:background="#1565C0"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_weight=".20"
+                android:gravity="center"
+                android:text="VERIFICATION CODE"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#FDD835"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/txterror"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:background="#f44336"
+                android:gravity="center"
+                android:text="Please Enable Data Connection"
+
+                android:textColor="#FFF"
+                android:textStyle="bold"
+                android:visibility="gone"
+
+                />
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/linearLayout1"
+            android:layout_marginTop="36dp"
+            android:gravity="center"
+            android:text="Verify Your Mobile Number"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#F44336"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="22dp"
+            android:gravity="center"
+            android:text="You can enter the verification code which you have received on mobile."
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtcode"
+            android:layout_marginTop="48dp"
+            android:gravity="center"
+            android:orientation="horizontal"></LinearLayout>
+
+        <TextView
+            android:id="@+id/txtverify"
+            android:layout_width="103dp"
+            android:layout_height="35dp"
+            android:layout_alignLeft="@+id/txtcode"
+            android:layout_alignTop="@+id/linearLayout2"
+            android:layout_marginTop="25dp"
+            android:background="#F44336"
+            android:gravity="center"
+            android:text="Verifying..."
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#FFF" />
+
+        <EditText
+            android:id="@+id/txtcode"
+            android:layout_width="150dp"
+            android:layout_height="35dp"
+            android:layout_below="@+id/textView2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/rounder_corner_white"
+            android:clickable="false"
+            android:editable="false"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="1107"
+            android:inputType="numberSigned"
+            android:maxLength="4">
+
+            <requestFocus />
+        </EditText>
+
+        <TextView
+            android:id="@+id/txtresend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="53dp"
+            android:text="Resend Code"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/colorPrimaryDark" />
+
+        <ProgressBar
+            android:id="@+id/progressBar1"
+            android:layout_width="45dp"
+            android:layout_height="35dp"
+            android:layout_alignTop="@+id/txtverify"
+            android:layout_toRightOf="@+id/txtverify"
+            android:background="#F44336" />
+
+
+    </RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>

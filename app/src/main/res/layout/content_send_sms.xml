@@ -1,0 +1,689 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.tech9teen.SendSMSActivity"
+    tools:showIn="@layout/activity_send_sms">
+
+
+    <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_margin="4dp"
+        android:foreground="?attr/selectableItemBackground"
+        card_view:cardBackgroundColor="@color/colorAccent"
+        card_view:cardCornerRadius="2dp"
+
+
+        card_view:cardElevation="10dp">
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtBalance"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+
+
+                android:gravity="center"
+
+                android:text="Your Balance Is : "
+
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:foreground="?attr/selectableItemBackground"
+                card_view:cardBackgroundColor="#FFFFFFFF"
+                card_view:cardCornerRadius="2dp"
+
+
+                card_view:cardElevation="10dp">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+
+
+                    android:orientation="vertical">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/input_layout_edtmessage"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.13"
+
+                        android:gravity="center|left">
+
+                        <EditText
+                            android:id="@+id/edtmessage"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+
+                            android:gravity="center|top|left"
+                            android:hint="Enter Message"
+                            android:inputType="textCapSentences|textMultiLine"
+
+                            android:minLines="3" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <!--android:inputType="textCapSentences|textMultiLine"-->
+                    <TextView
+                        android:id="@+id/txtSmsCounter"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="1 Message"
+                        android:textColor="@color/colorAccent"
+                        android:visibility="gone"
+
+                        />
+
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:foreground="?attr/selectableItemBackground"
+                card_view:cardBackgroundColor="#FFFFFFFF"
+                card_view:cardCornerRadius="2dp"
+
+
+                card_view:cardElevation="10dp">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+
+
+                    android:orientation="vertical">
+
+
+                    <Spinner
+                        android:id="@+id/spnTemplate"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content" />
+
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/crdMessageTyepSingleMultiple"
+
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:foreground="?attr/selectableItemBackground"
+                card_view:cardBackgroundColor="#FFFFFFFF"
+                card_view:cardCornerRadius="2dp"
+
+
+                card_view:cardElevation="10dp">
+
+
+                <RadioGroup
+                    android:id="@+id/rdGrpMessage"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rdSingle"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+
+                        android:layout_weight="1"
+                        android:text="Single" />
+
+                    <RadioButton
+                        android:id="@+id/rdMultiple"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Multiple" />
+
+                </RadioGroup>
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+
+                android:id="@+id/llsingle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:foreground="?attr/selectableItemBackground"
+                card_view:cardBackgroundColor="#FFFFFFFF"
+                card_view:cardCornerRadius="2dp"
+
+
+                card_view:cardElevation="10dp">
+
+                <LinearLayout
+
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.3">
+
+                        <LinearLayout
+
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+
+
+                            android:orientation="vertical">
+
+                            <android.support.design.widget.TextInputLayout
+                                android:id="@+id/input_layout_edtMobile"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.13"
+                                android:gravity="center|left">
+
+                                <EditText
+                                    android:id="@+id/edtMobile"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="center|top|left"
+                                    android:hint="Enter Mobile"
+
+
+                                    android:inputType="textMultiLine"
+
+                                    android:minLines="1"
+
+                                    />
+                            </android.support.design.widget.TextInputLayout>
+
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1.7">
+
+                        <ImageView
+                            android:id="@+id/imgPicContact"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_margin="8dp"
+                            android:src="@drawable/icon_addcontact" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+
+
+
+
+            <LinearLayout
+                android:id="@+id/llmultiple"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+
+
+                android:orientation="vertical">
+
+
+                <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+
+
+                    android:foreground="?attr/selectableItemBackground"
+                    card_view:cardBackgroundColor="#FFFFFFFF"
+                    card_view:cardCornerRadius="2dp"
+
+
+                    card_view:cardElevation="10dp">
+
+                    <Spinner
+                        android:id="@+id/spnGroup"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone" />
+
+
+                    <TextView
+
+                        android:id="@+id/txtGroup"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:text="@string/tap_to_select"
+                        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+
+                    <TextView
+
+                        android:id="@+id/txtError"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dp"
+
+                        android:text="Error"
+                        android:textColor="@color/red_error"
+
+                        android:visibility="gone" />
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+
+
+            <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:foreground="?attr/selectableItemBackground"
+                card_view:cardBackgroundColor="#FFFFFFFF"
+                card_view:cardCornerRadius="2dp"
+
+
+                card_view:cardElevation="10dp">
+
+
+                <LinearLayout
+
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+
+                    android:orientation="vertical">
+
+                    <RadioGroup
+                        android:id="@+id/rdGrpRoute"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+
+
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/rdRoute1"
+                            android:layout_width="81dp"
+                            android:layout_height="wrap_content"
+                            android:checked="true"
+                            android:text="GSM" />
+
+                        <RadioButton
+                            android:id="@+id/rdRoute2"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Promotional" />
+
+                        <RadioButton
+                            android:id="@+id/rdRoute3"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Transactional" />
+
+                    </RadioGroup>
+
+
+                    <LinearLayout
+                        android:id="@+id/llsenderid"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+
+
+                        android:orientation="vertical">
+
+
+                        <LinearLayout
+
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+
+
+                            android:orientation="vertical">
+
+                            <Spinner
+                                android:id="@+id/spnSenderId"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+
+                                android:layout_marginLeft="10dp" />
+
+
+                        </LinearLayout>
+
+
+                        <CheckBox
+                            android:id="@+id/chkScheduleSMS"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+
+                            android:text="Schedule SMS" />
+
+
+                        <LinearLayout
+                            android:id="@+id/llreuestsenderid"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:background="@color/colorAccent"
+
+                            android:gravity="center">
+
+                            <TextView
+                                android:id="@+id/textView8"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_weight="0.5"
+                                android:paddingLeft="4dp"
+                                android:text="Tap to Request new Sender ID"
+
+
+                                android:textColor="@color/white"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/iconSenderBlinkIcon"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="4dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="4dp"
+                                android:layout_weight="1.5"
+                                android:drawableRight="@drawable/ic_send_symbol"
+                                android:paddingRight="15dp"
+                                android:textColor="@color/white"
+
+
+                                android:textStyle="bold" />
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+            <LinearLayout
+                android:id="@+id/llScheduleSMS"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+
+                    <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="1"
+
+                        android:foreground="?attr/selectableItemBackground"
+                        card_view:cardBackgroundColor="#FFFFFFFF"
+                        card_view:cardCornerRadius="2dp"
+                        card_view:cardElevation="10dp">
+
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_weight="1"
+
+
+                            android:orientation="vertical">
+
+                            <android.support.design.widget.TextInputLayout
+                                android:id="@+id/input_layout_edtdate"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.13"
+                                android:gravity="center|left">
+
+                                <EditText
+                                    android:id="@+id/edtdate"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:editable="false"
+                                    android:gravity="center|top|left"
+                                    android:hint="Select Date"
+
+                                    android:inputType="textCapSentences|textMultiLine" />
+                            </android.support.design.widget.TextInputLayout>
+
+
+                        </LinearLayout>
+                    </android.support.v7.widget.CardView>
+
+
+                    <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+
+                        android:foreground="?attr/selectableItemBackground"
+                        card_view:cardBackgroundColor="#FFFFFFFF"
+                        card_view:cardCornerRadius="2dp"
+                        card_view:cardElevation="10dp">
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_weight="1"
+
+
+                            android:orientation="vertical">
+
+                            <android.support.design.widget.TextInputLayout
+                                android:id="@+id/input_layout_edttime"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.13"
+                                android:gravity="center|left">
+
+                                <EditText
+                                    android:id="@+id/edttime"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="center|top|left"
+                                    android:hint="Select Time"
+
+                                    android:inputType="textCapSentences|textMultiLine" />
+                            </android.support.design.widget.TextInputLayout>
+
+
+                        </LinearLayout>
+                    </android.support.v7.widget.CardView>
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <com.andexert.library.RippleView
+                android:id="@+id/more"
+                rv_centered="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+
+                >
+
+                <Button
+                    android:id="@+id/btnSendSMS"
+
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+
+                    android:background="@drawable/button_rect_list_normal_blue"
+                    android:drawableRight="@drawable/icon_white_sendsms"
+
+                    android:paddingRight="8dp"
+
+                    android:text="Send SMS"
+                    android:textColor="@color/white" />
+            </com.andexert.library.RippleView>
+
+            <!--
+                        <com.andexert.library.RippleView
+
+                            rv_centered="true"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginTop="10dp"
+
+                            >
+
+                            <Button
+                                android:id="@+id/btnSchedule"
+
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+
+
+                                android:background="@drawable/button_rect_list_normal_blue"
+
+                                android:text="Schedule SMS"
+                                android:textColor="@color/white" />
+                        </com.andexert.library.RippleView>-->
+
+
+            <com.andexert.library.RippleView
+
+                rv_centered="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+
+                >
+
+                <Button
+                    android:id="@+id/btnImport"
+
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+
+
+                    android:layout_marginBottom="18dp"
+                    android:background="@drawable/button_rect_list_normal_blue"
+                    android:text="Import Contacts From CSV"
+                    android:textColor="@color/white" />
+            </com.andexert.library.RippleView>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

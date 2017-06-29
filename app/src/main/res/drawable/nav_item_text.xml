@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Text color when checked -->
+    <item android:color="#000000" android:state_checked="true" />
+
+    <!-- Text color when not checked. Modify value to color of primary text. -->
+    <item android:color="#212121" />
+
+</selector>

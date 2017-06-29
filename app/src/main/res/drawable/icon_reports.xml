@@ -1,0 +1,51 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="100dp"
+    android:height="100dp"
+    android:viewportHeight="505.0"
+    android:viewportWidth="505.0">
+    <path
+        android:fillColor="#90DFAA"
+        android:pathData="M252.5,252.5m-252.5,0a252.5,252.5 0,1 1,505 0a252.5,252.5 0,1 1,-505 0" />
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M325.6,86.1l0,53.6l53.5,0l0,279.2l-253.2,0l0,-332.8z" />
+    <path
+        android:fillColor="#E6E9EE"
+        android:pathData="M325.6,86.1l53.5,53.6l-53.5,0z" />
+    <path
+        android:fillColor="#E6E9EE"
+        android:pathData="M148.8,104.9h97.2v11h-97.2z" />
+    <path
+        android:fillColor="#E6E9EE"
+        android:pathData="M148.8,128.8h97.2v11h-97.2z" />
+    <path
+        android:fillColor="#E6E9EE"
+        android:pathData="M148.8,152.6h63.7v11h-63.7z" />
+    <path
+        android:fillColor="#FF7058"
+        android:pathData="M317.1,240h35.2v146.7h-35.2z" />
+    <path
+        android:fillColor="#324A5E"
+        android:pathData="M262.3,275.2h35.2v111.5h-35.2z" />
+    <path
+        android:fillColor="#ACB3BA"
+        android:pathData="M207.5,313.3h35.2v73.4h-35.2z" />
+    <path
+        android:fillColor="#84DBFF"
+        android:pathData="M152.7,289.9h35.2v96.8h-35.2z" />
+    <path
+        android:fillColor="#324A5E"
+        android:pathData="M225.8,265.2l-60.1,-28l3.4,-7.1l55.3,25.7l56.5,-51.6l51.4,-29.4l3.9,6.9l-51,29.1z" />
+    <path
+        android:fillColor="#84DBFF"
+        android:pathData="M334.2,178.3m-14.7,0a14.7,14.7 0,1 1,29.4 0a14.7,14.7 0,1 1,-29.4 0" />
+    <path
+        android:fillColor="#84DBFF"
+        android:pathData="M282.8,207.6m-14.7,0a14.7,14.7 0,1 1,29.4 0a14.7,14.7 0,1 1,-29.4 0" />
+    <path
+        android:fillColor="#84DBFF"
+        android:pathData="M225.1,260.5m-14.7,0a14.7,14.7 0,1 1,29.4 0a14.7,14.7 0,1 1,-29.4 0" />
+    <path
+        android:fillColor="#84DBFF"
+        android:pathData="M167.4,233.6m-14.7,0a14.7,14.7 0,1 1,29.4 0a14.7,14.7 0,1 1,-29.4 0" />
+</vector>
